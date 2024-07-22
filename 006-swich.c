@@ -23,4 +23,6 @@ int main() {
     default:
         printf("Não é pontuação.\n");
     }
+    
+    return 0;
 }
