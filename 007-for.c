@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 int main() {
-    int a, b, i;
-
     printf("Digite dois valores inteiros: ");
+
+    int a, b;
     scanf("%d %d", &a, &b);
 
-    for (i = a; i <= b; i++) {
+    for (int i = a; i <= b; i++) {
         printf("%d\n", i);
     }
 
