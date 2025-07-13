@@ -1,10 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
-#define TRUE 1
-#define FALSE 0
-
-typedef char bool;
+#include <stdbool.h>
 
 bool ehPrimo(int numero);
 
@@ -30,16 +26,16 @@ bool ehPrimo(int numero)
 {
     if (numero <= 1)
     {
-        return FALSE;
+        return false;
     }
 
     for (int i = 2; i * i <= numero; i++)
     {
         if (numero % i == 0)
         {
-            return FALSE;
+            return false;
         }
     }
 
-    return TRUE;
+    return true;
 }
